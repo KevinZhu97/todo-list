@@ -43,7 +43,7 @@ button {
     align-items: center;
     padding: 0;
     width: 85%;
-    border-radius: 10px;
+    border-radius: 5px;
     background: none;
     border: none;
     font-size: 1rem;
@@ -68,7 +68,8 @@ button:hover {
 }
 
 .preview-content {
-    padding: 1rem 1rem;
+    padding: 0 1rem;
+    margin: 0;
 }
 
 .add-project {
@@ -132,8 +133,9 @@ button:hover {
 }
 
 .project-popup-buttons button {
-    text-align: center;
+    justify-content: center;
     padding: 1rem;
+    border: 1px solid lightgray;
 }
 
 .add-button {
@@ -142,4 +144,89 @@ button:hover {
 
 .cancel-button {
     background-color: #FFA1A1;
+}
+
+.added-project-button {
+    padding: 2px;
+}
+
+.button-project {
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.button-project:hover {
+    background-color: darkgray;
+}
+
+.button-project img {
+    margin: 0 8px;
+}
+
+.preview-content {
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.inbox-add-task-button {
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    width: 100px;
+    padding-left: 0;
+    margin-left: 1rem;
+}
+
+.inbox-add-task-button.hideme {
+    display: none;
+
+}
+
+.task-popup-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-cancel-task-button-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.add-cancel-task-button-container button {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid lightgray
+}
+
+.to-do-preview {
+    width: 80vw;
+}
+
+.task-list {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.inbox-content {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.task-input {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    margin-bottom: 10px;
+}
+
+.single-task-container {
+    padding: 10px;
 }
