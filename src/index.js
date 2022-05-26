@@ -26,3 +26,4 @@ inboxButton.addEventListener('click', () => {
     previewPage.innerHTML = '';
     createInboxPreview();
 })
+

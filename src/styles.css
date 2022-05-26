@@ -230,3 +230,14 @@ button:hover {
 .single-task-container {
     padding: 10px;
 }
+
+.single-task-container:hover {
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.project-content {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}

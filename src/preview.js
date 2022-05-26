@@ -17,9 +17,10 @@ export function createInboxPreview() {
 
     previewPage.appendChild(inboxContainer)
     previewPage.appendChild(addTaskButton)
+    createInboxTask()
 }
 
-function createAddCancelButtons() {
+export function createAddCancelButtons() {
     const taskPopupButtons = document.createElement('div')
     taskPopupButtons.classList.add('task-popup-buttons')
 
@@ -33,6 +34,7 @@ function createAddCancelButtons() {
     addTaskToListButton.innerText = "Add"
     addTaskToListButton.addEventListener('click', () => {
         if (taskInput.value != '') {
+            //how to make this more universal instead of just inbox to do list
             toDoList.push(taskInput.value)
             const addTaskButton2 = document.querySelector('.inbox-add-task-button')
             addTaskButton2.classList.remove('hideme')
@@ -83,7 +85,6 @@ function createInboxTask() {
                         toDoList.splice(i, 1)
                     }
                 }
-                // remove from the toDoList too
             }
         })
     })

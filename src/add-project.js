@@ -15,3 +15,4 @@ export function cancelAddInputPopup() {
     addInputContainer.classList.remove('active')
     input.value = '';
 }
+
